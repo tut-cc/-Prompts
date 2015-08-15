@@ -1,7 +1,7 @@
 # -Prompts
 コマンドプロンプトで入力を受け取るための簡単なモジュールです
 
-# TODO
+# How to
 ```D
 import Prompts;
 
