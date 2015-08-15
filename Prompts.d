@@ -22,12 +22,12 @@ string Password(string msg){
   return to!string(buf);
 }
 
-string Choose(string msg,string []list,string defa){
+string Choose(string msg,string[] list,string defa){
   write(msg," ", list ," (",defa,"): ");
   string buf = readln();
   string input = toLower(chop(buf));
-  foreach(string s; list){
-    if(cmp(input,toLower(s)) == 0){
+  foreach(s; list){
+    if(input == toLower(s)){
       return s;
     }
   }
@@ -47,7 +47,7 @@ bool YN(string msg){
 bool YesNo(string msg){
   write(msg," [Yes/No]: ");
   string buf = readln();
-  if(cmp(toLower(chop(buf)),"yes") == 0){
+  if(toLower(chop(buf)) == "yes"){
     return true;
   }
   return false;
